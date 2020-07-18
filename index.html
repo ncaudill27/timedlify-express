@@ -12,10 +12,14 @@
       <h1>Timedlify</h1>
     </header>
     <main>
-      <div data-netlify-identity-menu></div>
-      <!-- <a href="/.netlify/functions/helloWorld" class="alarm">
-        <p>Login</p>
-      </a> -->
+      <article>
+        <form method="POST" action="/">
+          <h2>Login</h2>
+          <label>Email <input type="email" id="email" name="email" required></label>
+          <label>Password <input type="password" id="password" name="password" required></label>
+          <button type="submit">Login</button>
+        </form>
+      </article>
     </main>
   </body>
 </html>
