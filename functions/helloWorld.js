@@ -1,17 +1,7 @@
-exports.handler = function(event, context, callback) {
-  // console.log("Event:", event);
-  // console.log("Context:", context);
+export function handler(event, context, callback) {
 
   return callback(null, {
     statusCode: 200,
-    body: JSON.stringify({
-      text: 'Hello, World',
-      attachments: [
-        {
-          event: {...event},
-          context: {...context}
-        }
-      ]
-    })
+    body: 'Hello World'
   });
 };

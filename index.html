@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>Timedlify</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="index.css">
-    <title>Timedlify</title>
   </head>
   <body>
     <header>
@@ -16,38 +16,6 @@
       <a href="/.netlify/functions/helloWorld" class="alarm">
         <p>Login</p>
       </a>
-      <div id="message">
-        <form id="test" action="/.netlify/function/helloWorld" method="POST">
-          <input type="text" id="text" name="text">
-          <input type="submit" value="Test">
-        </form>
-      </div>
-      <script>
-        const form = document.getElementById('test');
-        form.addEventListener('submit', function(e) {
-          e.preventDefault();
-          const text = document.getElementById('text').value;
-          showText(text);
-        });
-
-        function showText(text) {
-          fetch('/.netlify/functions/helloWorld', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-              'Accept': 'application/json'
-            },
-            body: JSON.stringify({
-              text
-            })
-          })
-          .then( res => res.json() )
-          .then( response => {
-            messageDiv = document.getElementById('message');
-            messageDiv.innerText = text
-          });
-        }
-      </script>
     </main>
   </body>
 </html>
