@@ -16,6 +16,33 @@
       <a href="/.netlify/functions/helloWorld" class="alarm">
         <p>Login</p>
       </a>
+      <div id="message">
+        <form id="test" action="/.netlify/function/helloWorld" method="POST">
+          <input type="text" id="text" name="text">
+          <input type="submit" value="Test">
+        </form>
+      </div>
+      <script>
+        const form = document.getElementById('test');
+        form.addEventListener('submit', function(e) {
+          e.preventDefault();
+          const text = document.getElementById('text');
+          showText(text);
+        });
+
+        function showText(text) {
+          fetch('/.netlify/functions/helloWorld', {
+            method: 'POST',
+            body: JSON.stringify({
+              text
+            })
+          })
+          .then( res => res.json() )
+          .then( response => console.log("Response:", response) )
+          messageDiv = document.getElementById('message');
+          messageDiv.innerText = text
+        }
+      </script>
     </main>
   </body>
 </html>
