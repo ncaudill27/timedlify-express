@@ -42,9 +42,10 @@
             })
           })
           .then( res => res.json() )
-          .then( response => console.log("Response:", response) )
-          messageDiv = document.getElementById('message');
-          messageDiv.innerText = text
+          .then( response => {
+            messageDiv = document.getElementById('message');
+            messageDiv.innerText = text
+          });
         }
       </script>
     </main>
