@@ -1,3 +1,5 @@
+import { auth } from '../index.js';
+
 function handleLogin(e) {
   e.preventDefault();
   auth.login(this.email.value, this.password.value, true)

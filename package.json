@@ -1,0 +1,11 @@
+{
+  "name": "timedlify-express",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:ncaudill27/timedlify-express.git",
+  "author": "ncaudill27 <nelson.a.caudill@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "gotrue-js": "^0.9.26"
+  }
+}
