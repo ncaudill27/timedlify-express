@@ -5,20 +5,22 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="index.css">
+    <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
   <body>
     <header>
       <h1>Timedlify</h1>
     </header>
     <main>
-      <article>
+      <div data-netlify-identity-menu></div>
+      <!-- <article>
         <form id="login" method="POST" action="/">
           <h2>Login</h2>
           <label>Email <input type="email" id="email" name="email" required></label>
           <label>Password <input type="password" id="password" name="password" required></label>
           <button type="submit">Login</button>
         </form>
-      </article>
+      </article> -->
     </main>
     <script type="module" src="index.js"></script>
   </body>
