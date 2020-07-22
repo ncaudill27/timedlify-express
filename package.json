@@ -6,6 +6,6 @@
   "author": "ncaudill27 <nelson.a.caudill@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "gotrue-js": "^0.9.26"
+    "dotenv": "^8.2.0"
   }
 }
