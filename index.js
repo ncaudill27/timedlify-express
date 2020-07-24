@@ -1,4 +1,3 @@
-require('dotenv').config();
 // import GoTrue from 'gotrue-js';
 // import handleLogin from './helpers/handleLogin.js';
 
@@ -12,4 +11,3 @@ require('dotenv').config();
 // const loginForm = document.getElementById('login');
 // loginForm.addEventListener('submit', handleLogin);
 // console.log('mounted');
-console.log(process.env.REDIRECT_URI);
